@@ -71,7 +71,6 @@ const router = createRouter({
         name: "ActHot",
         component: ActNorth,
       }
-
     },
     {
       path: "/pages/Yelu-pages/camp",

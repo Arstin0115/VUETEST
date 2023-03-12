@@ -92,7 +92,7 @@ const getEmployeeDTOes = onMounted(() => {
     <!-- <el-header class="search">
     <Actsearch />
     </el-header> -->
-    <ActNorth />
+    
     <Actselect />
     <!-- <Actcarousel /> -->
     <Actselectcard />
