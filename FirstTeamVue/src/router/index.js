@@ -13,7 +13,7 @@ import ShopView from "@/views/YeluPages/Shop/ShopView.vue";
 import test from "@/views/YeluPages/Self/test.vue";
 import test2 from "@/views/YeluPages/Self/test2.vue";
 
-import ActNorth from "@/views/YeluPages/Act/Sections/ActNorth.vue";
+//import ActNorth from "@/views/YeluPages/Act/Sections/ActNorth.vue";
 
 
 
@@ -65,12 +65,34 @@ const router = createRouter({
       path: "/pages/Yelu-pages/act",
       name: "act",
       component: ActView,
-      children: 
-      {
-        path: "ActHot",
-        name: "ActHot",
-        component: ActNorth,
-      }
+      children:[
+        {
+          path: "Sections/ActHot",
+          name: "ActHot",
+          component:()=>import("../views/YeluPages/Act/Sections/ActHot.vue"),
+        },
+        {
+          path: "Sections/ActNorth",
+          name: "ActNorth",
+          component:()=>import("../views/YeluPages/Act/Sections/ActNorth.vue"),
+        },
+        {
+          path: "Sections/ActWest",
+          name: "ActWest",
+          component:()=>import("../views/YeluPages/Act/Sections/ActWest.vue"),
+        },
+        {
+          path: "Sections/ActSouth",
+          name: "ActSouth",
+          component:()=>import("../views/YeluPages/Act/Sections/ActSouth.vue"),
+        },
+        {
+          path: "Sections/ActEast",
+          name: "ActEast",
+          component:()=>import("../views/YeluPages/Act/Sections/ActEast.vue"),
+        },
+      ] 
+      
     },
     {
       path: "/pages/Yelu-pages/camp",

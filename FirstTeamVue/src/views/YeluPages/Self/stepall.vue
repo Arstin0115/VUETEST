@@ -9,7 +9,7 @@
   import step1 from '../Self/Sections/step1.vue'
   import step2 from '../Self/Sections/step2.vue'
   // import step3 from '../Self/Sections/step3.vue'
-  import step3 from '../Act/Sections/Actselectcard.vue'
+  //import step3 from '../Act/Sections/Actselectcard.vue'
 
   import { ref } from 'vue'
   
@@ -19,7 +19,6 @@
     components: {
       step1,
       step2,
-      step3
     },
     data() {
       return {

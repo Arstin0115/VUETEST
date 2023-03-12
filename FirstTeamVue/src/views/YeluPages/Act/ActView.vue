@@ -4,18 +4,17 @@ import axios from "axios";
 //example components
 import DefaultNavbar from "../../../examples/navbars/NavbarDefault.vue";
 import yelufooter from "../../../examples/footers/yelufooter.vue";
-import testtable2 from "../Set/Sections/testtable2.vue";
-
+import Actcarousel from "../Act/Sections/Actcarousel.vue";
+import ActselectBtn from "../Act/Sections/ActselectBtn.vue";
 //image
 import bg0 from "@/assets/img/bg/bg01.jpg";
-import ActNorth from "@/views/YeluPages/Act/Sections/ActNorth.vue";
+import ActHot from "@/views/YeluPages/Act/Sections/ActHot.vue";
 //dep
 import Typed from "typed.js";
 
 //sections 放置要引入的頁面
 //import Actcarousel from "./Sections/Actcarousel.vue";
 import Actselect from "./Sections/Actselect.vue";
-import Actselectcard from "./Sections/Actselectcard.vue";
 
 // import Information from "./Sections/AboutInformation.vue";
 
@@ -94,9 +93,13 @@ const getEmployeeDTOes = onMounted(() => {
     </el-header> -->
     
     <Actselect />
-    <!-- <Actcarousel /> -->
-    <Actselectcard />
-    <testtable2 />
+    <ActselectBtn />
+    <Actcarousel />
+    <ActHot />
+    <router-view></router-view>
+    
+    
+    
 
 
     <!-- <Information /> -->

@@ -1,11 +1,12 @@
 <script setup>
-import Actcarousel from "./Actcarousel.vue";
+
 import { onMounted, onUnmounted, ref, reactive, computed } from "vue";
 import axios from "axios";
 // example components
 import TransparentBlogCard from "../../../../examples/cards/blogCards/TransparentBlogCard.vue";
 import BackgroundBlogCard from "../../../../examples/cards/blogCards/BackgroundBlogCard.vue";
 
+import Actcarousel from "./Actcarousel.vue";
 //Vue Material Kit 2 components
 import tp from "@/assets/img/ActImg/Taipei.jpg";
 import tc from "@/assets/img/ActImg/Taichung.jpg";
@@ -33,7 +34,7 @@ const getEmployeeDTOes = onMounted(() => {
 </script>
 
 <template>
-    <Actcarousel />
+    
 <div class="">
     <el-container>
         <el-header>

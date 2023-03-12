@@ -16,7 +16,7 @@ import flower from "@/assets/img/ActImg/flower.jpg";
 </script>
 
 <template>
-    <Actcarousel />
+    
     <div class="">
         <el-container>
             <el-header>
