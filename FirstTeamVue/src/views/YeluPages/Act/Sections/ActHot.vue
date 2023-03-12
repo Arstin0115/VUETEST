@@ -6,7 +6,6 @@ import axios from "axios";
 import TransparentBlogCard from "../../../../examples/cards/blogCards/TransparentBlogCard.vue";
 import BackgroundBlogCard from "../../../../examples/cards/blogCards/BackgroundBlogCard.vue";
 
-import Actcarousel from "./Actcarousel.vue";
 //Vue Material Kit 2 components
 import tp from "@/assets/img/ActImg/Taipei.jpg";
 import tc from "@/assets/img/ActImg/Taichung.jpg";

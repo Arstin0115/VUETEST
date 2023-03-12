@@ -95,7 +95,7 @@ const getEmployeeDTOes = onMounted(() => {
     <Actselect />
     <ActselectBtn />
     <Actcarousel />
-    <ActHot />
+    <!-- <ActHot /> -->
     <router-view></router-view>
     
     
