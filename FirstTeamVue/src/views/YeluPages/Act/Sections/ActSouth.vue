@@ -1,5 +1,4 @@
 <script setup>
-import Actcarousel from "./Actcarousel.vue";
 // example components
 import TransparentBlogCard from "../../../../examples/cards/blogCards/TransparentBlogCard.vue";
 import BackgroundBlogCard from "../../../../examples/cards/blogCards/BackgroundBlogCard.vue";

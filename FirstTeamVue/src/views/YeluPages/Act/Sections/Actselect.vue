@@ -1,6 +1,7 @@
-<script lang="ts" setup>
+<script setup>
 import { Search } from '@element-plus/icons-vue'
 import { ref, computed, reactive, onMounted } from 'vue'
+
 onMounted(() => {
     changeList()
 })

@@ -1,5 +1,4 @@
 <script setup>
-
 import { onMounted, onUnmounted, ref, reactive, computed } from "vue";
 import axios from "axios";
 // example components
@@ -51,51 +50,10 @@ const getEmployeeDTOes = onMounted(() => {
                     </div>
                     <div class="col-lg-2 col-sm-6" v-for="item in Act">
                         <TransparentBlogCard :image="flower" :title=item.活動id :description=item.地區 />
-                    </div>
-                    <!-- <div class="col-lg-2 col-sm-6">
-                            <TransparentBlogCard :image="flower" title="2023 九份老街＆野柳＆平溪十分一日遊"
-                                description="走訪如仙境般的太平山國家森林" />
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                    </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div>
-                                                                        <div class="col-lg-2 col-sm-6">
-                                                                            <TransparentBlogCard :image="sun" title="2023 台灣桃園｜東眼山國家森林遊樂區" description="" />
-                                                                        </div> -->
-                    </div>
+                    </div>                   
+                </div>
                 </section>
             </el-main>
         </el-container>
     </div>
 </template>
-<style></style>

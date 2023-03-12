@@ -3,20 +3,16 @@ import { onMounted, onUnmounted, ref, reactive, computed } from "vue";
 import axios from "axios";
 //example components
 import DefaultNavbar from "../../../examples/navbars/NavbarDefault.vue";
-import yelufooter from "../../../examples/footers/yelufooter.vue";
-import Actcarousel from "../Act/Sections/Actcarousel.vue";
-import ActselectBtn from "../Act/Sections/ActselectBtn.vue";
 //image
 import bg0 from "@/assets/img/bg/bg01.jpg";
-import ActHot from "@/views/YeluPages/Act/Sections/ActHot.vue";
 //dep
 import Typed from "typed.js";
 
 //sections 放置要引入的頁面
-//import Actcarousel from "./Sections/Actcarousel.vue";
+import yelufooter from "../../../examples/footers/yelufooter.vue";
+import Actcarousel from "../Act/Sections/Actcarousel.vue";
+import ActselectBtn from "../Act/Sections/ActselectBtn.vue";
 import Actselect from "./Sections/Actselect.vue";
-
-// import Information from "./Sections/AboutInformation.vue";
 
 
 const body = document.getElementsByTagName("body")[0];
@@ -78,8 +74,6 @@ const getEmployeeDTOes = onMounted(() => {
             <p hidden>{{ item.活動id }}</p>
             {{ item.活動介紹 }}
             </p>
-
-
           </div>
         </div>
       </div>
@@ -87,15 +81,10 @@ const getEmployeeDTOes = onMounted(() => {
   </header>
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     
-    <!-- 記得這裡設定引入標籤 -->
-    <!-- <el-header class="search">
-    <Actsearch />
-    </el-header> -->
-    
+    <!-- 記得這裡設定引入標籤 -->  
     <Actselect />
     <ActselectBtn />
     <Actcarousel />
-    <!-- <ActHot /> -->
     <router-view></router-view>
     
     
